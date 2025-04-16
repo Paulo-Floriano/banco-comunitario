@@ -1,14 +1,10 @@
-import { Cliente } from "./Cliente";
-  
-  export interface IntConta {
-    cliente: Cliente;
+ export interface IntConta{ 
     saldo: number;
-    depositar(valor: number): void;
-    sacar(valor: number): boolean;
-    transferir(contaDestino: IntConta, valor: number): boolean;
-    verificarSaldo(): number;
-  }
-  
- 
+
+    deposito(valorDepositar: number):void;
+    saque(valorSacar: number):void;
+    transferencia(valorTrasferir: number, cliente2: IntConta):void;
+    verificarsaldo():void;
+}
   
   

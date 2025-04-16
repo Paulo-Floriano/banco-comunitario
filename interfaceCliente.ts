@@ -1,4 +1,3 @@
-
 export interface IntCliente {
     id: number;
     nome: string;
@@ -6,8 +5,7 @@ export interface IntCliente {
     telefone: string;
     renda: number;
   }
-  
-
+ 
   
 
   

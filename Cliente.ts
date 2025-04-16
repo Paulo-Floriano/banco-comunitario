@@ -1,12 +1,23 @@
-
-  import { IntCliente } from "./interfaceCliente";
+import { IntCliente } from "./interfaceCliente";
   
   export class Cliente implements IntCliente {
-    constructor(
-      public id: number,
-      public nome: string,
-      public endereco: string,
-      public telefone: string,
-      public renda: number
-    ) {}
+    
+       id: number
+       nome: string
+       endereco: string
+       telefone: string
+       renda: number
+
+       constructor(nome: string, id: number, endereco: string, telefone: string, renda: number){
+        this.nome = nome;
+        this.id = id;
+        this.endereco = endereco;
+        this.telefone = telefone;
+        this.renda = renda;
+    }
+    
+     
   }
+
+
+    
